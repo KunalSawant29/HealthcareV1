@@ -1,5 +1,5 @@
 resource "aws_instance" "kubernetes-server" {
- ami = "ami-0aa2b7722dc1b5612"
+ ami = "ami-0f5ee92e2d63afc18"
  instance_type = "t2.medium"
  vpc_security_group_ids = ["sg-088585bb55f0856c0"]
  key_name = "myownkey"
