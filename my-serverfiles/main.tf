@@ -28,7 +28,7 @@ resource "aws_instance" "kubernetes-server" {
  type = "ssh"
  host = self.public_ip
  user = "ubuntu"
- private_key = file(".myownkey.pem")
+ private_key = file("./myownkey.pem")
  }
  }
  }
