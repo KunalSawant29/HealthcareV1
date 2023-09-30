@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,5 +17,5 @@ spec:
         - name: medicure
           image: kunalsawant29/healthcare:1.0
           ports:
-            - containerPort: 8084
+           - containerPort: 8084
             - name: http-web-app-01
