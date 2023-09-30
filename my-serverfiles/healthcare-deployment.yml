@@ -19,4 +19,5 @@ spec:
         image: kunalsawant29/healthcare:1.0
         ports:
         - containerPort: 8084
+          name: http-web-app-01
         
