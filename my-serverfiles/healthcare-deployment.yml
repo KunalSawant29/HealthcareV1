@@ -1,21 +1,21 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: healthcare-project
+  name: healthcare
+  labels:
+    app: healthcare
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      component: web
+      app: healthcare
   template:
     metadata:
       labels:
-        component: web
+        app: healthcare
     spec:
       containers:
-        - name: medicure
-          image: kunalsawant29/healthcare:1.0
-          ports:
-           - containerPort: "8084"
-           - name: http-web-app-01
+      - name: healthcare
+        image: kunalsawant29/healthcare:1.0
+        ports:
+        - containerPort: 8084
