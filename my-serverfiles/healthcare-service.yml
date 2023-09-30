@@ -9,5 +9,4 @@ spec:
    app: healthcare
    ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8084
+      port: 8084
