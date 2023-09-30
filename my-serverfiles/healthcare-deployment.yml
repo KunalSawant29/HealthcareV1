@@ -10,7 +10,7 @@ spec:
   selector: null
   matchLabels:
     app: front-end
-template:
+ template:
   metadata:
     matchLabels:
       app: front-end
