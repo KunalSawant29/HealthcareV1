@@ -10,3 +10,4 @@ spec:
    ports:
     - protocol: TCP
       port: 8084
+      targetPort: http-web-app-01
