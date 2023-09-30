@@ -12,7 +12,7 @@ spec:
     app: front-end
 template:
   metadata:
-    labels:
+    matchLabels:
       app: front-end
   spec:
     containers:
