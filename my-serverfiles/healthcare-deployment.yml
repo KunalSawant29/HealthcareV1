@@ -19,3 +19,4 @@ spec:
         image: kunalsawant29/healthcare:1.0
         ports:
         - containerPort: 8084
+        
