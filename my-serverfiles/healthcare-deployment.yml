@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthcare-project
+  labels:
+    app: front-end
+spec:
+  replicas: 2
+  selector: null
+  matchLabels:
+    app: front-end
+template:
+  metadata:
+    labels:
+      app: front-end
+  spec:
+    containers:
+      - name: medicure
+        image: kunalsawant29/healthcare:1.0
+        ports:
+          - containerPort: 8084
+          - name: http-web-app-01
