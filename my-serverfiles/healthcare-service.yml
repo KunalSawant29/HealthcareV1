@@ -3,10 +3,10 @@ kind: Service
 metadata:
     name: healthcare-service
 spec:
-  type: NodePort
+  type: NodePort  
+  selector:
+    app: healthcare
   ports:
     - port: 8084
       targetPort: 8084
-      nodePort: 31616
-  selector:
-    component: healthcare    
+      nodePort: 31616    
