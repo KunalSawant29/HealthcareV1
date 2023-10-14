@@ -7,6 +7,6 @@ spec:
   selector: 
     app: healthcare
   ports:
-   - protocol: TCP
-     port: 8084
-     targetPort: http-web-app-01
+   - port: 8084
+     targetport: 8084
+     nodePort: 30007
